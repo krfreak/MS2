@@ -1,0 +1,1134 @@
+[
+  { "name": "Einführung in die Medieninformatik"
+    , "shortName": "EMI"
+    , "lecturer": "Prof. Dr.-Ing. Nicole Jochems"
+    , "lectureDays": [
+      { "weekday": 4
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "AM4"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 4
+        , "begin": "10:00"
+        , "end": "11:00"
+        , "location": "AM4"
+      }
+    ]
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  }
+
+  ,
+  { "name": "Einführung in die Programmierung"
+    , "shortName": "Programmieren"
+    , "lecturer": "Prof. Dr. rer. nat. Stefan Fischer"
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "10:15"
+        , "end": "11:45"
+        , "location": "AM1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 2
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "AM1"
+      }
+    ]
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 10
+  },
+  { "name": "Java Projekt"
+    , "shortName": "Java Projekt"
+    , "lecturer": "Dr.-Ing. Sebastian Ebers // Klaus-Dieter Schumacher"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "16:30"
+        , "end": "18:00"
+        , "location": "AM1"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 0
+  },
+  { "name": "Programmierkurs Java"
+    , "shortName": "Programmierkurs Java"
+    , "lecturer": "Dr.-Ing. Sebastian Ebers"
+    , "lectureDays": [
+      { "weekday": 4
+        , "begin": "16:00"
+        , "end": "18:00"
+        , "location": "AM1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 3
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "PC Pool 3/4"
+      },
+      { "weekday": 5
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "PC Pool 3/4"
+      },
+      { "weekday": 3
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "PC Pool 1/2"
+      }
+    ]
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 0
+  },
+  { "name": "Lineare Algebra I"
+    , "shortName": "LADS I"
+    , "lecturer": "Prof. Dr. rer. nat. Jan Modersitzki"
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "AM1"
+      },
+      { "weekday": 4
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "AM1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 2
+        , "begin": "8:00"
+        , "end": "10:00"
+        , "location": "SemiMathe1 (Hilbert)"
+      },
+      { "weekday": 5
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "H1"
+      },
+      { "weekday": 3
+        , "begin": "8:00"
+        , "end": "10:00"
+        , "location": "SemiMathe1 (Hilbert)"
+      }
+
+    ]
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 8
+  },
+  { "name": "Analysis I"
+    , "shortName": "ANA I"
+    , "lecturer": "Prof. Dr. rer. nat. Jürgen Prestin"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "AM1"
+      },
+      { "weekday": 5
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "AM1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 3
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "V2"
+      },
+      { "weekday": 3
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "AM4"
+      }
+    ]
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 8
+  },
+  { "name": "Software-Ergonomie"
+    , "shortName": "SER"
+    , "lecturer": "Prof. Dr. rer. nat. Tilo Mentler"
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "H1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 1
+        , "begin": "12:00"
+        , "end": "13:00"
+        , "location": "H1"
+      }
+    ]
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  },
+  { "name": "Algorithmen und Datenstrukturen"
+    , "shortName": "AuD"
+    , "lecturer": "Prof. Dr. rer. nat. Ralf Möller"
+    , "lectureDays": [
+      { "weekday": 4
+        , "begin": "16:00"
+        , "end": "18:00"
+        , "location": "AM1"
+      },
+      { "weekday": 5
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "AM1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 1
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "SemiMathe2 (Banach)"
+      },
+      { "weekday": 1
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "IFIS 2035"
+      },
+      { "weekday": 1
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "SemiInf2/3 (Cook/Karp)"
+      }
+    ]
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 8
+  },
+  { "name": "Technische Grundlagen der Informatik 1"
+    , "shortName": "TGI 1"
+    , "lecturer": "Prof. Dr.-Ing. Erik Maehle"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "Z1/2"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 6
+  },
+  { "name": "Übung - Grundlagen der Statistik I"
+    , "shortName": "Stat1mdi"
+    , "lecturer": "Dr. rer. nat. Daniel Wessel"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "08:15"
+        , "end": "09:45"
+        , "location": "Z3"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 0
+  },
+  { "name": "Grundlagen der Statistik I"
+    , "shortName": "stat1mdi"
+    , "lecturer": "Dr. rer. nat. Daniel Wessel"
+    , "lectureDays": [
+      { "weekday": 5
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "Z1/2"
+      },
+      { "weekday": 5
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "H1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 3
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "Z3"
+      }
+    ]
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 8
+  },
+  { "name": "Arbeitspsychologie"
+    , "shortName": "ArbPsy"
+    , "lecturer": "Prof. Dr. rer. nat. Thomas Franke"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "12:00"
+        , "end": "14:30"
+        , "location": "AM4"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  },
+  { "name": "Grundlagen der Multimediatechnik"
+    , "shortName": "GMT"
+    , "lecturer": "Prof. Dr.-Ing. Andreas Schrader"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "Z1/2"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 5
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "AM1"
+      }
+    ]
+    , "semester": 3
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  },
+  { "name": "Medienproduktion und Medienprogrammierung"
+    , "shortName": "MPP"
+    , "lecturer": "Prof. Dr. rer. nat. Michael Herczeg u.a."
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "AMS2"
+      },
+      { "weekday": 5
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "AM4"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 3
+        , "begin": "15:00"
+        , "end": "17:30"
+        , "location": "IMIS PC-Pool"
+      },
+      { "weekday": 4
+        , "begin": "13:30"
+        , "end": "16:00"
+        , "location": "IMIS PC-Pool"
+      }
+    ]
+    , "semester": 3
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 8
+  },
+  { "name": "Theoretische Informatik"
+    , "shortName": "TI"
+    , "lecturer": "Prof. Dr. rer. nat. Maciej Liskiewicz"
+    , "lectureDays": [
+      { "weekday": 4
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "Z1/2"
+      },
+      { "weekday": 2
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "AM1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 2
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "SemiMathe2 (Banach)"
+      },
+      { "weekday": 1
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "ITCS 2021"
+      },
+      { "weekday": 1
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "SemiMathe1 (Hilbert)"
+      },
+      { "weekday": 1
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "SemiInf2/3 (Cook/Karp)"
+      },
+      { "weekday": 1
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "AM4"
+      },
+      { "weekday": 1
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "SemiInf2/3 (Cook/Karp)"
+      }
+    ]
+    , "semester": 3
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 8
+  },
+  { "name": "Software Engineering"
+    , "shortName": "SWEng"
+    , "lecturer": "Prof. Dr. rer. nat. Martin Leucker"
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "12:15"
+        , "end": "13:45"
+        , "location": "V1"
+      },
+      { "weekday": 3
+        , "begin": "10:15"
+        , "end": "11:45"
+        , "location": "V2"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 3
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 6
+  },
+  { "name": "Wahrnehmungs- & Kognitionspsychologie"
+    , "shortName": "KogSpy"
+    , "lecturer": "Dr. rer. nat. Daniel Wessel"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "AM3"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 3
+        , "begin": "14:00"
+        , "end": "15:00"
+        , "location": "Z1/2"
+      }
+    ]
+    , "semester": 3
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  },
+  { "name": "Interaktionsdesign"
+    , "shortName": "IDE"
+    , "lecturer": "Dr. phil. Thomas Winkler"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "T S1"
+      },
+      { "weekday": 4
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "SemiInf5 (Von Neumann)"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 1
+        , "begin": "12:00"
+        , "end": "14:30"
+        , "location": "IMIS PC-Pool"
+      },
+      { "weekday": 4
+        , "begin": "13:30"
+        , "end": "16:00"
+        , "location": "IMIS PC-Pool"
+      }
+    ]
+    , "semester": 4
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 8
+  },
+  { "name": "Betriebssysteme und Netze"
+    , "shortName": "BuN"
+    , "lecturer": "Prof. Dr. rer. nat. Stefan Fischer"
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "AM3"
+      },
+      { "weekday": 2
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "T1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 5
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "SemiInf4 (Minsky)"
+      },
+      { "weekday": 5
+        , "begin": "14:00"
+        , "end": "15:30"
+        , "location": "SemiInf2/3 (Cook/Karp)"
+      },
+      { "weekday": 5
+        , "begin": "14:00"
+        , "end": "15:30"
+        , "location": "SemiInf5 (Von Neumann)"
+      }
+    ]
+    , "semester": 4
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 8
+  },
+  { "name": "Datenbanken"
+    , "shortName": "DB"
+    , "lecturer": "Prof. Dr. rer. nat. Ralf Möller"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "AM3"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 2
+        , "begin": "10:00"
+        , "end": "11:00"
+        , "location": "IFIS 2035"
+      },
+      { "weekday": 4
+        , "begin": "11:00"
+        , "end": "12:00"
+        , "location": "IFIS 2035"
+      },
+      { "weekday": 2
+        , "begin": "16:00"
+        , "end": "17:00"
+        , "location": "IFIS 2035"
+      }
+    ]
+    , "semester": 4
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  },
+  { "name": "Praktikum Software Engineering"
+    , "shortName": "SWEngPrakt"
+
+    , "lecturer": "Prof. Dr. rer. nat. Martin Leucker"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "12:00"
+        , "end": "18:00"
+        , "location": "PC Pool"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 4
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 6
+  },
+  { "name": "Medienpsychologie"
+    , "shortName": "Medienpsy"
+    , "lecturer": "Dr. rer. nat. Daniel Wessel"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "AM1"
+      },
+      { "weekday": 1
+        , "begin": "16:00"
+        , "end": "18:00"
+        , "location": "AM4"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 4
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  },
+  { "name": "Usability Engineering"
+    , "shortName": "USE"
+    , "lecturer": "Prof. Dr. rer. nat. Tilo Mentler"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "AM4"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 5
+        , "begin": "11:00"
+        , "end": "12:00"
+        , "location": "AMS2"
+      }
+    ]
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  },
+  { "name": "Bachelor-Projekt"
+    , "shortName": "BA-Projekt"
+    , "lecturer": "Prof. Dr.-Ing. Nicole Jochems"
+    , "lectureDays": [
+      { "weekday": 4
+        , "begin": "16:00"
+        , "end": "18:00"
+        , "location": "H1"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 8
+  },
+  { "name": "Bachelor-Seminar Medieninformatik"
+    , "shortName": "BA-Seminar MDI"
+    , "lecturer": "Priv.-Doz. Dr. rer. nat. Floris Ernst"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "H4"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  },
+  { "name": "Wissenschaftliches Arbeiten"
+    , "shortName": "WisA"
+    , "lecturer": "Dr. rer. nat. Daniel Wessel"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "16:00"
+        , "end": "18:00"
+        , "location": "AMS1"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 3
+  },
+  { "name": "WP - Non-Standard Datenbanken"
+    , "shortName": "NDB"
+    , "lecturer": "Prof. Dr. rer. nat. Ralf Möller"
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "V1"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "WP - Computergestütztes Lehren und Lernen"
+    , "shortName": "CLL"
+    , "lecturer": "Christian Wolters, M.Sc."
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "CBBM S1/2"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "WP - Musik und Computer"
+    , "shortName": "MuC"
+    , "lecturer": "Prof. Dr. Joachim Stange-Elbe"
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "9:00"
+        , "end": "12:00"
+        , "location": "S VK"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "WP - Signalverarbeitung"
+    , "shortName": "SiV"
+    , "lecturer": "Prof. Dr.-Ing. Alfred Mertins"
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "AM 1"
+      },
+      { "weekday": 4
+        , "begin": "14:00"
+        , "end": "15:30"
+        , "location": "V 1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 1
+        , "begin": "16:00"
+        , "end": "18:00"
+        , "location": "AM S1"
+      },
+      { "weekday": 3
+        , "begin": "16:00"
+        , "end": "18:00"
+        , "location": "SemiMathe2 (Banach)"
+      },
+      { "weekday": 3
+        , "begin": "16:00"
+        , "end": "18:00"
+        , "location": "AM S2"
+      },
+      { "weekday": 4
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "AM S1"
+      },
+      { "weekday": 4
+        , "begin": "16:00"
+        , "end": "18:00"
+        , "location": "SemiInf2/3 (Cook/Karp)"
+      },
+      { "weekday": 1
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "H1"
+      },
+      { "weekday": 3
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "AM4"
+      }
+    ]
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "WP - Technische Grundlagen der Informatik 2"
+    , "shortName": "TGI2"
+    , "lecturer": "Dr. phil. Jan Haase"
+    , "lectureDays": [
+      { "weekday": 5
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "V1"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "WP - Einführung in die Logik"
+    , "shortName": "Logik"
+    , "lecturer": "Prof. Dr. rer. nat. Till Tantau"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "AM1"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 5
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "Computergrafik"
+    , "shortName": "CompGrafik"
+    , "lecturer": "Dr. rer. nat. Jan Ehrhardt"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "V1"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 4
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "PC-Pool 3/2"
+      }
+    ]
+    , "semester": 6
+    , "onSchedule": false
+    , "isMaster": false
+    , "credits": 4
+  },
+  { "name": "WP - Computergestützte Kooperation"
+    , "shortName": "CK"
+    , "lecturer": "Prof. Dr. rer. nat. Tilo Mentler"
+    , "lectureDays": [
+      { "weekday": 5
+        , "begin": "09:00"
+        , "end": "12:00"
+        , "location": "IMIS PC-Pool"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 6
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "WP - Künstliche Intelligenz"
+    , "shortName": "KI"
+    , "lecturer": "Priv.-Doz. Dr. rer. nat. Floris Ernst"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "14:00"
+        , "end": "15:30"
+        , "location": "V2"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 1
+        , "begin": "12:00"
+        , "end": "13:00"
+        , "location": "AM S1"
+      },
+      { "weekday": 1
+        , "begin": "15:00"
+        , "end": "16:00"
+        , "location": "AM S1"
+      }
+    ]
+    , "semester": 6
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "WP - Gamification"
+    , "shortName": "Gamification"
+    , "lecturer": "Dr. rer. nat. Daniel Wessel"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "SemiMathe1 (Hilbert)"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 6
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "WP - Codierung und Sicherheit"
+    , "shortName": "CuS"
+    , "lecturer": "Prof. Dr. math. Rüdiger K. Reischuk"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "Am4"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 4
+        , "begin": "13:00"
+        , "end": "14:00"
+        , "location": "SemiInf5 (Von Neumann)"
+      },
+      { "weekday": 4
+        , "begin": "14:00"
+        , "end": "15:00"
+        , "location": "SemiInf5 (Von Neumann)"
+      },
+      { "weekday": 4
+        , "begin": "15:00"
+        , "end": "16:00"
+        , "location": "SemiInf5 (Von Neumann)"
+      }
+    ]
+    , "semester": 6
+    , "onSchedule": false
+    , "isMaster": false
+  },
+  { "name": "Medien- und Designtheorie"
+    , "shortName": "MuD"
+    , "lecturer": "Dr. phil. Thomas Winkler"
+    , "lectureDays": [
+      { "weekday": 1
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "SemiInf4 (Minsky)"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 5
+        , "begin": "08:00"
+        , "end": "10:00"
+        , "location": "SemiInf4 (Minsky)"
+      }
+    ]
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  },
+  { "name": "Hypermediasysteme"
+    , "shortName": "HmS"
+    , "lecturer": "Prof. Dr. rer. nat. Michael Herczeg"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "10:00"
+        , "end": "11:45"
+        , "location": "SemiInf5 (Von Neumann)"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 2
+        , "begin": "11:45"
+        , "end": "12:30"
+        , "location": "SemiInf5 (Von Neumann)"
+      }
+    ]
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  },
+  { "name": "Master-Projekt-Arbeitsplatzsysteme"
+    , "shortName": "Arbeitsplatzsysteme"
+    , "lecturer": "Prof. Dr.-Ing. Nicole Jochems"
+    , "lectureDays": [
+      { "weekday": 4
+        , "begin": "12:00"
+        , "end": "13:00"
+        , "location": "IMIS PC-Pool"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 8
+  },
+  { "name": "Ingenieurpsychologie"
+    , "shortName": "IngPsy"
+    , "lecturer": "Prof. Dr. rer. nat. Thomas Franke"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "14:00"
+        , "end": "17:00"
+        , "location": "SemiInf2/3 (Cook/Karp)"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 1
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  },
+  { "name": "Ambient Computing"
+    , "shortName": "AmbComp"
+    , "lecturer": "Prof. Dr.-Ing. Andreas Schrader"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "SemiInf2 (Cook)"
+      },
+      { "weekday": 4
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "V2"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  },
+  { "name": "Medienübertragung"
+    , "shortName": "Medü"
+    , "lecturer": "Prof. Dr.-Ing. Andreas Schrader"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "SemiInf2 (Cook)"
+      }
+    ]
+    , "exerciseDays": [
+      { "weekday": 1
+        , "begin": "10:00"
+        , "end": "12:00"
+        , "location": "IMIS PC-Pool"
+      }
+    ]
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  },
+  { "name": "Master-Projekt Mobile Systeme"
+    , "shortName": "MobSy"
+    , "lecturer": "Prof. Dr.-Ing. Nicole Jochems"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "13:00"
+        , "end": "14:00"
+        , "location": "IMIS PC-Pool"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 8
+  },
+  { "name": "Master Seminar Medieninformatik"
+    , "shortName": "MDI"
+    , "lecturer": "Prof. Dr.-Ing. Nicole Jochems"
+    , "lectureDays": [
+      { "weekday": 5
+        , "begin": "12:00"
+        , "end": "14:00"
+        , "location": "SemiInf4 (Minsky)"
+      },
+      { "weekday": 4
+        , "begin": "08:00"
+        , "end": "11:00"
+        , "location": "SemiInf4 (Minsky)"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  },
+  { "name": "Sozialpsychologie und Soziale Medien"
+    , "shortName": "Sozi"
+    , "lecturer": "Prof. Dr. rer. nat. Thomas Franke"
+    , "lectureDays": [
+      { "weekday": 4
+        , "begin": "16:00"
+        , "end": "19:00"
+        , "location": "SemiInf2/3 (Cook/Karp)"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 2
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  },
+  { "name": "Prozeßführungssysteme"
+    , "shortName": "PfS"
+    , "lecturer": "Prof. Dr. rer. nat. Michael Herczeg"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "09:00"
+        , "end": "12:00"
+        , "location": "IMIS PC-Pool"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 3
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  },
+  { "name": "Augmented, Mixed and Virtual Reality"
+    , "shortName": "AR/MR/VR"
+    , "lecturer": "Dr. phil. Thomas Winkler"
+    , "lectureDays": [
+      { "weekday": 3
+        , "begin": "10:15"
+        , "end": "13:00"
+        , "location": "IMIS PC-Pool"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 3
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  },
+  { "name": "Master-Projekt Ambiente Systeme"
+    , "shortName": "MA-Projekt AS"
+    , "lecturer": "Prof. Dr.-Ing. Andreas Schrader"
+    , "lectureDays": [
+      { "weekday": 2
+        , "begin": "14:00"
+        , "end": "16:00"
+        , "location": "SemiInf2/3 (Cook/Karp)"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 3
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 8
+  },
+  { "name": "Motivations- und Emotionspsychologie"
+    , "shortName": "MuE-Psy"
+    , "lecturer": "Prof. Dr. rer. nat. Thomas Franke"
+    , "lectureDays": [
+      { "weekday": 4
+        , "begin": "9:00"
+        , "end": "12:00"
+        , "location": "ITCS 2021"
+      }
+    ]
+    , "exerciseDays": []
+    , "semester": 3
+    , "onSchedule": false
+    , "isMaster": true
+    , "credits": 4
+  }
+]
