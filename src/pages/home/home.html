@@ -1,17 +1,46 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Hauptmenü</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-</ion-content>
+<ion-content class="home" no-bounce>
+  <ion-content class="no-scroll">
+    <ion-grid no-padding>
+      <ion-row >
+        <ion-col width-33="true">
+          <button ion-button fab-center clear class="text-on-bottom" (click)="launch('https://moodle.uni-luebeck.de/my/')">
+            <ion-icon name="school"></ion-icon>
+            Moodle
+          </button>
+        </ion-col>
+        <ion-col width-33="true">
+          <button ion-button fab-center clear class="text-on-bottom" ui-sref="tab.filter">
+            <ion-icon name="ios-funnel"></ion-icon>
+            Filter
+          </button>
+        </ion-col>
+        <ion-col width-33="true">
+          <button ion-button fab-center clear class="text-on-bottom" ui-sref="tab.settings">
+            <ion-icon name="md-settings"></ion-icon>
+            Einstellungen
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row >
+        <ion-col width-33="true">
+          <button ion-button fab-center clear class="text-on-bottom" ui-sref="tab.about">
+            <ion-icon name="information-circle"></ion-icon>
+            Über uns
+          </button>
+        </ion-col>
+        <ion-col width-33="true">
+          <button ion-button fab-center clear class="text-on-bottom" ui-sref="tab.links">
+            <ion-icon name="share-alt"></ion-icon>
+            Links
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
