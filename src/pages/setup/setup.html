@@ -4,7 +4,22 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="home" no-bounce>
-  <ion-content class="no-scroll">
-    Muhahaha
-  </ion-content>
+<ion-content>
+<ion-segment [(ngModel)]="query" (ionChange)="showdata()">
+
+  <ion-segment-button value="slide1">
+    Bachelor
+  </ion-segment-button>
+  <ion-segment-button value="slide2">
+     Master
+  </ion-segment-button>
+</ion-segment>
+<ion-slides (ionSlideDidChange)="slideChanged()">
+  <ion-slide>
+    Some Content
+  </ion-slide>
+  <ion-slide>
+    Some Content
+  </ion-slide>
+</ion-slides>
+</ion-content>

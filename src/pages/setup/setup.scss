@@ -1,4 +1,7 @@
 page-setup {
 
-
+  .swiper-slide {
+ overflow-y: scroll;
+ display: block;
+ }
 }
