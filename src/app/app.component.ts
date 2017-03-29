@@ -9,7 +9,7 @@ import { SetupPage } from '../pages/setup/setup';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = SetupPage;
+  rootPage = TabsPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
