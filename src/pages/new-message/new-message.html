@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Neue Nachricht
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+
+  <form [formGroup]="message" (ngSubmit)="send(message.value)" novalidate>
+    <ion-list>
+      <ion-list-header>Titel</ion-list-header>
+    <ion-item>
+      <ion-input type="text" formControlName="title" placeholder="Titel" value=""></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>Tags (durch Komma getrennt)</ion-list-header>
+    <ion-item>
+      <ion-input type="text" formControlName="tags" placeholder="Semester 1, Semester 2, ..." value=""></ion-input>
+    </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-list-header>Nachricht</ion-list-header>
+    <ion-item>
+      <ion-textarea formControlName="content" placeholder="Deine Nachricht" value=""></ion-textarea>
+    </ion-item>
+  </ion-list>
+    <button ion-button type="submit" block>Absenden</button>
+  </form>
+
+
+
+</ion-content>

@@ -15,13 +15,13 @@
           </button>
         </ion-col>
         <ion-col width-33="true">
-          <button ion-button fab-center clear class="text-on-bottom" ui-sref="tab.filter">
+          <button ion-button fab-center clear class="text-on-bottom" (click)="goToPage('filter')">
             <ion-icon name="ios-funnel"></ion-icon>
             Filter
           </button>
         </ion-col>
         <ion-col width-33="true">
-          <button ion-button fab-center clear class="text-on-bottom" ui-sref="tab.settings">
+          <button ion-button fab-center clear class="text-on-bottom" (click)="goToPage('settings')">
             <ion-icon name="md-settings"></ion-icon>
             Einstellungen
           </button>
@@ -29,13 +29,13 @@
       </ion-row>
       <ion-row >
         <ion-col width-33="true">
-          <button ion-button fab-center clear class="text-on-bottom" ui-sref="tab.about">
+          <button ion-button fab-center clear class="text-on-bottom" (click)="goToPage('about')">
             <ion-icon name="information-circle"></ion-icon>
             Über uns
           </button>
         </ion-col>
         <ion-col width-33="true">
-          <button ion-button fab-center clear class="text-on-bottom" ui-sref="tab.links">
+          <button ion-button fab-center clear class="text-on-bottom" (click)="goToPage('links')">
             <ion-icon name="share-alt"></ion-icon>
             Links
           </button>

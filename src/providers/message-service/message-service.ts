@@ -9,7 +9,6 @@ export class MessageService {
   data: any[];
 
   constructor(public http: Http) {
-    console.log('Hello MessageService Provider');
   }
 
   reload(){
@@ -26,6 +25,33 @@ export class MessageService {
          resolve(this.data);
        });
    });
+  }
+
+  send(title, content, tags){
+    let message = {"title": title, "content": content, "tags": tags};
+    this.http.post("http://78.46.204.166/messages", message).subscribe(data=>{
+      this.data = [data];
+    }, error =>{
+      console.log("fail")
+    }
+  );
+  }
+
+  getFilters(){
+    if (this.data) {
+      // already loaded data
+      return Promise.resolve(this.data);
+    }
+
+    // don't have the data yet
+    return new Promise(resolve => {
+      this.http.get('http://78.46.204.166/messages/filters')
+      .map(res => res.json())
+      .subscribe(data => {
+        this.data = data.tags;
+        resolve(this.data);
+      });
+    });
   }
 
   load(){

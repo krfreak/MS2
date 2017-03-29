@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Filter</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let instance of tags">
+    <ion-item>
+      <ion-label>{{instance.tag}}</ion-label>
+      <ion-checkbox [checked]="isChecked(instance.tag)" [(ngModel)]="instance.checked" (change)="saveFilters(instance.tag)"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

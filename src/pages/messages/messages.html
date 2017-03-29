@@ -1,9 +1,13 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title class="titleicon" style="display:inline-block">
+    <ion-title>
       Nachrichten
     </ion-title>
-    <img src="./assets/img/logo.png" width="40px" style="display:inline-block" height="40px"/>
+    <ion-buttons end>
+      <button (click)="newMessage()" ion-button icon-only>
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -17,7 +21,7 @@
      refreshingText="Aktualisieren...">
    </ion-refresher-content>
  </ion-refresher>
-
+ 
   <ion-card *ngFor="let message of messages">
     <ion-card-header>
       {{message.title}}

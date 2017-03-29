@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { MessageService } from '../../providers/message-service/message-service';
 import { Message } from '../../models/message-model'
 import { Storage } from '@ionic/storage';
+import { NewMessagePage } from '../../pages/new-message/new-message';
 
 @Component({
   selector: 'page-messages',
@@ -24,6 +25,10 @@ export class MessagesPage {
         }
       });
     })
+  }
+
+  newMessage(){
+    this.navCtrl.push(NewMessagePage);
   }
 
   doRefresh(refresher){

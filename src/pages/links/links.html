@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Links</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item icon-left clear (click)="launch('https://cas.uni-luebeck.de/')">
+        <ion-icon name="mail"></ion-icon>
+        Uni-Mail
+      </button>
+      <button ion-item icon-left clear (click)="launch('https://qis.uni-luebeck.de/')">
+        <ion-icon name="document"></ion-icon>
+        QIS Uni Lübeck
+      </button>
+      <button ion-item icon-left clear (click)="launch('https://univis.uni-luebeck.de/')">
+        <ion-icon name="folder"></ion-icon>
+        UnivIS
+      </button>
+      <button ion-item icon-left clear (click)="launch('https://www.fsmint.uni-luebeck.de/')">
+        <ion-icon name="people"></ion-icon>
+        Fachschaft MINT
+      </button>
+  </ion-list>
+</ion-content>
