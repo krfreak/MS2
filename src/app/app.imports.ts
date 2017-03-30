@@ -11,12 +11,10 @@ import { MyApp } from './app.component';
 
 import { SetupViewModule } from './views/+setup';
 import { HomeViewModule } from './views/+home';
-import { AboutViewModule } from './views/+about';
 
 const ViewModules = [
 	SetupViewModule,
-	HomeViewModule,
-	AboutViewModule
+	HomeViewModule
 ];
 
 export const ApplicationImports = [
