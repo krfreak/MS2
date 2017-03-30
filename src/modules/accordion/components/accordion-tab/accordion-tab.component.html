@@ -1,0 +1,11 @@
+<div class="tab-panel" (click)="toggle($event)">
+  <ion-icon class="tab-indicator" name="ios-arrow-down"></ion-icon>
+  <div class="tab-label">
+    <template [ngTemplateOutlet]="title"></template>
+  </div>
+</div>
+<div @toggleHeight class="tab-content" *ngIf="isOpen && content" >
+  <div class="inner">
+    <template [ngTemplateOutlet]="content"></template>
+  </div>
+</div>

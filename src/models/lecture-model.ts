@@ -8,6 +8,9 @@ export class Lecture{
   onSchedule: boolean;
   isMaster: boolean;
   credits: number;
+  inSchedule: boolean;
+  try: number;
+  isDone: boolean;
 
   constructor(name, shortName, lecturer, lectureDays, excerciseDays, semester, onSchedule, isMaster, credits){
     this.name = name;
@@ -19,5 +22,8 @@ export class Lecture{
     this.onSchedule = onSchedule;
     this.isMaster = isMaster;
     this.credits = credits;
+    this.try = 0;
+    this.isDone = false;
+    this.inSchedule = false;
   }
 }

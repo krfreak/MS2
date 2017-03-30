@@ -1,0 +1,117 @@
+$et-accordion-tab_selectors: "et-accordion-tab";
+
+$et-accordion-tab_border-color: #ccc !default;
+
+$et-accordion-tab_content-padding: 1rem 1.6rem !default;
+
+$et-accordion-tab_panel-height: 4rem !default;
+$et-accordion-tab_panel-background: #eee !default;
+$et-accordion-tab_panel-background--hover: white !default;
+$et-accordion-tab_panel-padding: 1.6rem !default;
+$et-accordion-tab_panel-transition: .2s linear !default;
+
+$et-accordion-tab_label-color: black !default;
+$et-accordion-tab_label-color--hover: black !default;
+$et-accordion-tab_label-color--open: black !default;
+$et-accordion-tab_label-font-size: 1.4rem !default;
+$et-accordion-tab_label-transition: .2s linear !default;
+
+$et-accordion-tab_indicator-color--open: red !default;
+
+%et-accordion-tab-base {
+  display: block;
+  border-bottom: 1px solid transparent;
+
+  .tab-panel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+  }
+
+  .tab-label {
+    flex: 1 1 auto;
+    width: 100%;
+    text-align: left;
+  }
+
+  .tab-indicator {
+
+  }
+
+  .tab-content {
+    display: block;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &.-forceOpen {
+    .tab-panel {
+      cursor: default;
+    }
+  }
+
+  &.-isOpen {
+    .tab-indicator {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+et-accordion-tab {
+  @extend %et-accordion-tab-base;
+
+  border-color: $et-accordion-tab_border-color;
+
+  .tab-panel {
+    padding: $et-accordion-tab_panel-padding;
+    background: $et-accordion-tab_panel-background;
+    transition: $et-accordion-tab_panel-transition;
+
+    &:hover {
+      background: $et-accordion-tab_panel-background--hover;
+    }
+  }
+
+  .tab-label {
+    color: $et-accordion-tab_label-color;
+    font-size: $et-accordion-tab_label-font-size;
+    transition: $et-accordion-tab_label-transition;
+
+    &:hover {
+      color: $et-accordion-tab_label-color--hover;
+    }
+  }
+
+  .tab-indicator {
+    transition: $et-accordion-tab_label-transition;
+    transition-property: transform, color;
+    margin-right: 1.2rem;
+  }
+
+  .tab-content {
+    > .inner {
+      padding: $et-accordion-tab_content-padding;
+      padding-top: 0;
+    }
+  }
+
+  &.-isOpen {
+    .tab-panel {
+      background-color: $et-accordion-tab_panel-background--hover;
+    }
+
+    .tab-label {
+      color: $et-accordion-tab_label-color--open;
+    }
+
+    .tab-indicator {
+      color: $et-accordion-tab_indicator-color--open;
+    }
+  }
+}

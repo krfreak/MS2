@@ -1,25 +1,41 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>Setup</ion-title>
+    <ion-buttons end>
+      <button (click)="goToTabView()" ion-button icon-only>
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-<ion-segment [(ngModel)]="query" (ionChange)="showdata()">
+  <ion-slides (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+      <et-accordion>
+        <et-accordion-tab *ngFor="let lectures of filteredTerms; let i = index; trackBy:trackByIndex">
+          <template et-accordion-tab-label>
+            {{ i + 1 }}. Semester
+          </template>
+          <template et-accordion-tab-content>
+            <div class="lecture-item" *ngFor="let lecture of getLecturesFromTerm(i); trackBy:trackByIndex">
+              <ion-checkbox></ion-checkbox>
+              <h4 class="title"> {{ lecture.name }}</h4>
+            </div>
+          </template>
+        </et-accordion-tab>
+      </et-accordion>
+</ion-slide>
+<ion-slide>
 
-  <ion-segment-button value="slide1">
+</ion-slide>
+</ion-slides>
+<ion-segment [(ngModel)]="query" (ionChange)="showData()">
+  <ion-segment-button value="slide1" (click)="setMaster(false)">
     Bachelor
   </ion-segment-button>
-  <ion-segment-button value="slide2">
-     Master
+  <ion-segment-button value="slide2" (click)="setMaster(true)">
+    Master
   </ion-segment-button>
 </ion-segment>
-<ion-slides (ionSlideDidChange)="slideChanged()">
-  <ion-slide>
-    Some Content
-  </ion-slide>
-  <ion-slide>
-    Some Content
-  </ion-slide>
-</ion-slides>
 </ion-content>

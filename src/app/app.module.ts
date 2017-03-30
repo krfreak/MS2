@@ -13,6 +13,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { SettingsPage } from '../pages/settings/settings';
 import { FilterPage } from '../pages/filter/filter';
 import { NewMessagePage } from '../pages/new-message/new-message';
+import { AccordionModule } from '../modules/accordion'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NewMessagePage } from '../pages/new-message/new-message';
     IonicStorageModule.forRoot({
       name: '__magicdb',
       driverOrder: ['indexeddb', 'sqlite', 'websql']
-  })
+    }),
+    AccordionModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

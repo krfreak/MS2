@@ -20,9 +20,7 @@ export class MessagesPage {
         this.messages.push(new Message(msg.id, msg.title, msg.content, msg.isHint, msg.tags, msg.createdAt));
       };
       this.storage.ready().then(() => {
-        for(let msg of this.messages){
-          this.storage.set(msg.id, msg);
-        }
+          this.storage.set("messages", this.messages);
       });
     })
   }
@@ -34,13 +32,13 @@ export class MessagesPage {
   doRefresh(refresher){
     this.msgServ.load().then(data => {
       this.storage.ready().then(() => {
-        for(let msg of this.messages){
-          this.storage.set(msg.id, msg);
-        }
+        this.storage.set("messages", this.messages);
         this.messages = [];
-        this.storage.forEach((val, key, i) => {
-          this.messages.push(val);
-        });
+        this.storage.get("messages").then((data)=>{
+          for(let msg of data){
+            this.messages.push(msg as Message);
+          }
+        })
       });
       refresher.complete();
     });
