@@ -1,6 +1,6 @@
-import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { IonicStorageModule } from '@ionic/storage';
+import { NgModule } from '@angular/core';
+import { IonicApp } from 'ionic-angular';
+
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { HomePage } from '../pages/home/home';
@@ -13,7 +13,10 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { SettingsPage } from '../pages/settings/settings';
 import { FilterPage } from '../pages/filter/filter';
 import { NewMessagePage } from '../pages/new-message/new-message';
-import { AccordionModule } from '../modules/accordion'
+import { AccordionModule } from '../modules/accordion';
+
+import { ApplicationImports } from './app.imports';
+import { ApplicationProviders } from './app.providers';
 
 @NgModule({
   declarations: [
@@ -31,11 +34,7 @@ import { AccordionModule } from '../modules/accordion'
     SettingsPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot({
-      name: '__magicdb',
-      driverOrder: ['indexeddb', 'sqlite', 'websql']
-    }),
+    ...ApplicationImports,
     AccordionModule
   ],
   bootstrap: [IonicApp],
@@ -53,6 +52,8 @@ import { AccordionModule } from '../modules/accordion'
     FilterPage,
     SettingsPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    ...ApplicationProviders
+  ]
 })
 export class AppModule {}

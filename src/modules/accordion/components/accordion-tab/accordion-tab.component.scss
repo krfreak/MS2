@@ -16,7 +16,7 @@ $et-accordion-tab_label-color--open: black !default;
 $et-accordion-tab_label-font-size: 1.4rem !default;
 $et-accordion-tab_label-transition: .2s linear !default;
 
-$et-accordion-tab_indicator-color--open: red !default;
+$et-accordion-tab_indicator-color--open: black !default;
 
 %et-accordion-tab-base {
   display: block;
@@ -62,7 +62,7 @@ $et-accordion-tab_indicator-color--open: red !default;
     }
   }
 }
-
+ 
 et-accordion-tab {
   @extend %et-accordion-tab-base;
 
@@ -72,10 +72,6 @@ et-accordion-tab {
     padding: $et-accordion-tab_panel-padding;
     background: $et-accordion-tab_panel-background;
     transition: $et-accordion-tab_panel-transition;
-
-    &:hover {
-      background: $et-accordion-tab_panel-background--hover;
-    }
   }
 
   .tab-label {

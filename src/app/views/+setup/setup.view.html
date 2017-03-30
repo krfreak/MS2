@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="light">
+    <ion-title>Setup</ion-title>
+    <ion-buttons end>
+      <button (click)="onSetupDone()" ion-button icon-only color="secondary">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides (ionSlideDidChange)="onTabChanged($event)">
+    <ion-slide>
+      <et-accordion>
+        <et-accordion-tab *ngFor="let lectures of bachelorSemesters$ | async; let i = index; trackBy:trackByIndex">
+          <template et-accordion-tab-label>
+            {{ i + 1 }}. Semester
+          </template>
+          <template et-accordion-tab-content>
+            <ion-item class="lecture-item" *ngFor="let lecture of lectures; trackBy:trackById">
+              <ion-label>{{ lecture.name }}</ion-label>
+              <ion-checkbox color="secondary" (ionChange)="toggleLecture($event, lecture)" [checked]="lecture.inSchedule"></ion-checkbox>
+            </ion-item>
+          </template>
+        </et-accordion-tab>
+      </et-accordion>
+    </ion-slide>
+    <ion-slide>
+      <et-accordion>
+        <et-accordion-tab *ngFor="let lectures of masterSemesters$ | async; let i = index; trackBy:trackByIndex">
+          <template et-accordion-tab-label>
+            {{ i + 1 }}. Semester
+          </template>
+          <template et-accordion-tab-content>
+            <ion-item class="lecture-item" *ngFor="let lecture of lectures; trackBy:trackById">
+              <ion-label>{{ lecture.name }}</ion-label>
+              <ion-checkbox color="secondary" (ionChange)="toggleLecture($event, lecture)" [checked]="lecture.inSchedule"></ion-checkbox>
+            </ion-item>
+          </template>
+        </et-accordion-tab>
+      </et-accordion>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+<ion-footer>
+  <ion-segment [(ngModel)]="activeTabIndex" (ionChange)="changeTab($event)">
+    <ion-segment-button value="0">
+      Bachelor
+    </ion-segment-button>
+    <ion-segment-button value="1">
+      Master
+    </ion-segment-button>
+  </ion-segment>
+</ion-footer>

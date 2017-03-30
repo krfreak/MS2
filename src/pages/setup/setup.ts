@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, NavController, Slides } from 'ionic-angular';
-import { LinksPage } from '../links/links';
 import { Storage } from '@ionic/storage';
+import { LinksPage } from '../links/links';
 import { TabsPage } from '../tabs/tabs';
 import { Lecture } from '../../models/lecture-model';
 import { MessageService } from '../../providers/message-service/message-service';
