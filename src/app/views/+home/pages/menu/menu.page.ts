@@ -15,7 +15,7 @@ export class MenuPage {
 	}
 
 	public goToPage(page, url?: string) {
-		switch(page){
+		switch(page){ 
 			case 'links':
 				// this.navigationController.push(LinksPage);
 				break;

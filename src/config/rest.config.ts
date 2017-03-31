@@ -1,4 +1,4 @@
-import { GatewayConfig } from 'modules/communication';
+import { GatewayConfig } from '../modules/communication';
 
 export function RestGatewayConfigFactory(): GatewayConfig {
   return {

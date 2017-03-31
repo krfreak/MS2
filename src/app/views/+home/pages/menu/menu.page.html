@@ -3,42 +3,27 @@
     <ion-title>Hauptmenü</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content class="no-scroll">
-  <ion-grid no-padding>
-    <ion-row >
-      <ion-col width-33="true">
-        <button ion-button fab-center clear class="text-on-bottom" (click)="goToPage('moodle', 'https://moodle.uni-luebeck.de/my/')">
-          <ion-icon name="school"></ion-icon>
+  <ion-list>
+        <button ion-item (click)="goToPage('moodle', 'https://moodle.uni-luebeck.de/my/')" icon-left>
+          <ion-icon color="primary" name="school" item-left></ion-icon>
           Moodle
         </button>
-      </ion-col>
-      <ion-col width-33="true">
-        <button ion-button fab-center clear class="text-on-bottom" (click)="goToPage('filter')">
-          <ion-icon name="ios-funnel"></ion-icon>
+        <button ion-item (click)="goToPage('filter')" icon-left>
+          <ion-icon color="primary" name="ios-funnel" item-left></ion-icon>
           Filter
         </button>
-      </ion-col>
-      <ion-col width-33="true">
-        <button ion-button fab-center clear class="text-on-bottom" (click)="goToPage('settings')">
-          <ion-icon name="md-settings"></ion-icon>
+        <button ion-item (click)="goToPage('settings')" icon-left>
+          <ion-icon color="primary" name="md-settings" item-left></ion-icon>
           Einstellungen
         </button>
-      </ion-col>
-    </ion-row>
-    <ion-row >
-      <ion-col width-33="true">
-        <button ion-button fab-center clear class="text-on-bottom" (click)="goToPage('about')">
-          <ion-icon name="information-circle"></ion-icon>
+        <button ion-item (click)="goToPage('about')" icon-left>
+          <ion-icon color="primary" name="information-circle" item-left></ion-icon>
           Über uns
         </button>
-      </ion-col>
-      <ion-col width-33="true">
-        <button ion-button fab-center clear class="text-on-bottom" (click)="goToPage('links')">
-          <ion-icon name="share-alt"></ion-icon>
+        <button ion-item (click)="goToPage('links')" icon-left>
+          <ion-icon color="primary" name="share-alt" item-left></ion-icon>
           Links
         </button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  </ion-list>
 </ion-content>
