@@ -7,7 +7,6 @@ import { HomePage } from '../pages/home/home';
 import { MessagesPage } from '../pages/messages/messages';
 import { TimeTablePage } from '../pages/timetable/timetable';
 import { LinksPage } from '../pages/links/links';
-import { SetupPage } from '../pages/setup/setup';
 import { ProgressPage } from '../pages/progress/progress';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SettingsPage } from '../pages/settings/settings';
@@ -25,7 +24,6 @@ import { ApplicationProviders } from './app.providers';
     MessagesPage,
     NewMessagePage,
     ProgressPage,
-    SetupPage,
     TimeTablePage,
     LinksPage,
     HomePage,
@@ -44,7 +42,6 @@ import { ApplicationProviders } from './app.providers';
     MessagesPage,
     NewMessagePage,
     ProgressPage,
-    SetupPage,
     TimeTablePage,
     LinksPage,
     HomePage,

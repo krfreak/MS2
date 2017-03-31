@@ -4,6 +4,7 @@ import { IonicModule } from 'ionic-angular';
 
 import { HomeView } from './home.view';
 
+import { MessagesPageModule, MenuPageModule, AboutPageModule, SchedulePageModule } from './pages';
 
 const internalComponents = [
 ]
@@ -12,10 +13,18 @@ const components = [
   HomeView
 ];
 
+const pageModules = [
+  MessagesPageModule,
+  MenuPageModule,
+  AboutPageModule,
+  SchedulePageModule
+]
+
 @NgModule({
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    ...pageModules
   ],
   declarations: [
     ...internalComponents,
@@ -32,3 +41,4 @@ export class HomeViewModule {
 }
 
 export * from './home.view';
+export * from './pages';

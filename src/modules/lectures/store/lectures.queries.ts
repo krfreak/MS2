@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { Lecture } from '../core';
+import { Lecture, LectureDay } from '../core';
 
 import { Selectors } from './lectures.selectors';
 
@@ -24,4 +24,20 @@ export module Queries {
 
 	export const getMasterSemesters = createSelector(getMasterLectures, transformEntities);
 	export const getBachelorSemesters = createSelector(getBachelorLectures, transformEntities);
+
+	export const getSchedule = createSelector(getSelectedLectures, lectures => {
+		return lectures.reduce((days: { lecture: Lecture, day: LectureDay }[][], lecture) => {
+			lecture.lectureDays.forEach(day => {
+				days[day.weekday] = (days[day.weekday] || []).concat({
+					lecture,
+					day
+				})
+			});
+			return days;
+		}, []).map(infos => {
+			return infos.sort((a, b) => {
+				return parseInt(a.day.begin) - parseInt(b.day.begin)
+			})
+		});
+	})
 }

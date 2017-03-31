@@ -16,6 +16,8 @@ export class Service {
   public readonly masterSemesters$ = this.store.select(Queries.getMasterSemesters).publishReplay(1).refCount();
   public readonly bachelorSemesters$ = this.store.select(Queries.getBachelorSemesters).publishReplay(1).refCount();
 
+  public readonly schedule$ = this.store.select(Queries.getSchedule).publishReplay(1).refCount();
+
   constructor( private store: Store<any> ) { }
 
   public fetch() {

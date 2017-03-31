@@ -1,7 +1,7 @@
 export {
   Lecture, LectureDay,
   Module as LecturesModule,
-  // Serializer as LecturesSerializer,
+  Serializer as LecturesSerializer,
   Resource as LecturesResource,
   Service as LecturesService
 } from './core';

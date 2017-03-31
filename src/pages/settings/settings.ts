@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { SetupPage } from '../setup/setup';
 
 @Component({
   selector: 'page-settings',
@@ -13,7 +12,7 @@ export class SettingsPage {
   }
 
   goToSetup(){
-    this.navCtrl.push(SetupPage);
+
   }
 
   clearData(){

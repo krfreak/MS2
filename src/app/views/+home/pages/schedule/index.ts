@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from 'ionic-angular';
 
-import { MessagesPage } from './messages.page';
+import { SchedulePage } from './schedule.page';
 
 
 const internalComponents = [
 ]
 
 const components = [
-  MessagesPage
+  SchedulePage
 ];
 
 @NgModule({
@@ -28,7 +28,7 @@ const components = [
     ...components
   ]
 })
-export class MessagesPageModule {
+export class SchedulePageModule {
 }
 
-export * from './messages.page';
+export * from './schedule.page';

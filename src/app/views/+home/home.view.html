@@ -1,6 +1,10 @@
 <ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="Stundenplan" tabIcon="calendar"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="Nachrichten" tabIcon="chatbubbles"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Fortschritt" tabIcon="trending-up"></ion-tab>
-  <ion-tab [root]="tab4Root" tabTitle="Hauptmenü" tabIcon="home"></ion-tab>
+	<ion-tab [root]="tabs[0].page" [tabTitle]="tabs[0].title" [tabIcon]="tabs[0].icon">
+	</ion-tab>
+	<ion-tab [root]="tabs[1].page" [tabTitle]="tabs[1].title" [tabIcon]="tabs[1].icon">
+	</ion-tab>
+	<ion-tab [root]="tabs[2].page" [tabTitle]="tabs[2].title" [tabIcon]="tabs[2].icon">
+	</ion-tab>
+	<ion-tab [root]="tabs[3].page" [tabTitle]="tabs[3].title" [tabIcon]="tabs[3].icon">
+	</ion-tab>
 </ion-tabs>

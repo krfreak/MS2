@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Nachrichten
+    </ion-title>
+    <ion-buttons end>
+      <button (click)="newMessage()" ion-button icon-only>
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="padding">
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+   <ion-refresher-content
+     pullingIcon="arrow-dropdown"
+     pullingText="Zum Aktualisieren nach unten ziehen"
+     refreshingSpinner="circles"
+     refreshingText="Aktualisieren...">
+   </ion-refresher-content>
+ </ion-refresher>
+ 
+  <ion-card *ngFor="let message of messages$ | async">
+    <ion-card-header>
+      {{message.title}}
+    </ion-card-header>
+    <ion-card-content>
+      {{message.content}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

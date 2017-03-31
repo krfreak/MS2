@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Stundenplan
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-title>{{ weekdayName }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides (ionSlideDidChange)="onTabChanged($event)" [initialSlide]="weekday" pager>
+    <ion-slide *ngFor="let day of schedule$ | async">
+      <ion-card *ngFor="let info of day">
+        <ion-card-header>
+          {{info?.day?.begin}} - {{info?.day?.end}}
+        </ion-card-header>
+        <ion-card-content>
+          {{info?.lecture?.name}}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

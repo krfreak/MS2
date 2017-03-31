@@ -4,18 +4,22 @@ import { EffectsModule } from '@ngrx/effects';
 import { CommunicationModule } from './communication';
 
 import { LecturesModule, LecturesEffects, LecturesReducer } from './lectures';
+import { MessagesModule, MessagesEffects, MessagesReducer } from './messages';
 
 export const RootReducer = Object.assign({},
-  LecturesReducer
+  LecturesReducer,
+  MessagesReducer
 );
 
 const Effects = [
-  EffectsModule.run(LecturesEffects)
+  EffectsModule.run(LecturesEffects),
+  EffectsModule.run(MessagesEffects)
 ];
 
 const RootModules = [
   CommunicationModule.forRoot(),
-  LecturesModule.forRoot()
+  LecturesModule.forRoot(),
+  MessagesModule.forRoot()
 ];
 
 @NgModule({
