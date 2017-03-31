@@ -2,7 +2,12 @@ import { Message } from './messages.models';
 
 export module Serializer {
 	export function serialize(message: Message) {
-		return message;
+		if(!message) return null;
+		return { 
+			title: 				message.title, 
+			content: 			message.content,
+			tags:				message.tags || []
+		};
 	}
 
 	export function deserialize(data: any): Message[] {

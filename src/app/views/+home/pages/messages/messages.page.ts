@@ -16,4 +16,10 @@ export class MessagesPage {
 	}
 
   	constructor( private messagesService: MessagesService ) {}
+
+  	public onRefresh(refresher) {
+  		this.messagesService.fetch();
+  		refresher.complete();
+  		setTimeout(() => refresher.complete(), 500);
+  	} 
 }

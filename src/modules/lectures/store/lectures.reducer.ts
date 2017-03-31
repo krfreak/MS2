@@ -9,6 +9,10 @@ function ReducerFunction(state: State = InitialState, action: Action): State {
 	let entity: Lecture;
 	let selectedEntities: { [id: string]: Lecture };
 
+	if(action instanceof actions.ResetAction) {
+		return InitialState;
+	}
+
 	if(action instanceof actions.LoadSuccessAction) {
 		return action.payload;
 	}

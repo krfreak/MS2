@@ -5,6 +5,14 @@ import { ReduxUtil } from '../../../util';
 import { Lecture } from '../core';
 import { State } from './lectures.store';
 
+export class ResetAction extends ReduxUtil.TypedAction<null> {
+  public static TYPE = '[lectures] reset';
+
+  constructor() {
+    super(ResetAction.TYPE, null);
+  }
+}
+
 export class SaveAction extends ReduxUtil.TypedAction<State> {
   public static TYPE = '[lectures] save';
 

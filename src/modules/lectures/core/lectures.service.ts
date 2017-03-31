@@ -33,4 +33,8 @@ export class Service {
   	if(!lecture) return;
   	this.store.dispatch(new Actions.DeselectAction(lecture));
   }
+
+  public reset() {
+    this.store.dispatch(new Actions.ResetAction());
+  }
 }

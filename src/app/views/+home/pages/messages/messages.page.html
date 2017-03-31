@@ -13,7 +13,7 @@
 
 <ion-content class="padding">
 
-  <ion-refresher (ionRefresh)="doRefresh($event)">
+  <ion-refresher (ionRefresh)="onRefresh($event)">
    <ion-refresher-content
      pullingIcon="arrow-dropdown"
      pullingText="Zum Aktualisieren nach unten ziehen"
@@ -24,10 +24,10 @@
  
   <ion-card *ngFor="let message of messages$ | async">
     <ion-card-header>
-      {{message.title}}
+      {{message?.title}}
     </ion-card-header>
     <ion-card-content>
-      {{message.content}}
+      {{message?.content}}
     </ion-card-content>
   </ion-card>
 

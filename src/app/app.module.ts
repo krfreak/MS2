@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { IonicApp } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { MessagesPage } from '../pages/messages/messages';
 import { LinksPage } from '../pages/links/links';
 import { ProgressPage } from '../pages/progress/progress';
 import { SettingsPage } from '../pages/settings/settings';
@@ -16,7 +15,6 @@ import { ApplicationProviders } from './app.providers';
 @NgModule({
   declarations: [
     MyApp,
-    MessagesPage,
     NewMessagePage,
     ProgressPage,
     LinksPage,
@@ -30,7 +28,6 @@ import { ApplicationProviders } from './app.providers';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    MessagesPage,
     NewMessagePage,
     ProgressPage,
     LinksPage,

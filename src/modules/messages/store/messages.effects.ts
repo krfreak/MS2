@@ -20,7 +20,12 @@ export class Effects {
   )
   .withLatestFrom(this.store.select(Queries.getEntities))
   .map(([action, entities] )=> {
-    this.storage.set(StoreKey, { entities });
+    if(!entities || !Object.keys(entities).length) {
+      this.storage.remove(StoreKey);
+    }
+    else {
+      this.storage.set(StoreKey, { entities });
+    }
   })
 
   @Effect() loadFromStorage$ = this.actions$.ofType(actions.LoadAction.TYPE)
@@ -34,4 +39,28 @@ export class Effects {
       }
       return new actions.LoadSuccessAction(data);
     });
+
+  @Effect() fetchMessages$ = this.actions$.ofType(actions.FetchAction.TYPE)
+    .map(action => new RESTCommand(new Resource(), 'get'))
+    .switchMap((command) => this.gateway.send(command)
+      .map(response => new actions.FetchSuccessAction(response))
+      .catch(error => {
+        this.errorHandler.handleError(error);
+        return Observable.from([
+          new actions.FetchFailedAction(error)
+        ])
+      })
+    );
+
+  @Effect() sendMessage$ = this.actions$.ofType(actions.SendAction.TYPE)
+    .map(action => new RESTCommand(new Resource(), 'post', action.payload))
+    .switchMap((command) => this.gateway.send(command)
+      .map(response => new actions.SendSuccessAction(response))
+      .catch(error => {
+        this.errorHandler.handleError(error);
+        return Observable.from([
+          new actions.SendFailedAction(error)
+        ])
+      })
+    );
 }

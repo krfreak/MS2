@@ -18,11 +18,16 @@ export class Effects {
   @Effect({ dispatch: false}) saveToStorage$ = this.actions$.ofType(
     actions.FetchSuccessAction.TYPE, 
     actions.SelectAction.TYPE, 
-    actions.DeselectAction.TYPE
+    actions.DeselectAction.TYPE,
+    actions.ResetAction.TYPE
   )
   .withLatestFrom(this.store.select(Queries.getEntities), this.store.select(Queries.getSelectedEntities))
   .map(([action, entities, selectedEntities] )=> {
-    this.storage.set(StoreKey, { entities, selectedEntities });
+    if(action.type === actions.ResetAction.TYPE) {
+      this.storage.remove(StoreKey);
+    } else {
+      this.storage.set(StoreKey, { entities, selectedEntities });
+    }
   })
 
   @Effect() loadFromStorage$ = this.actions$.ofType(actions.LoadAction.TYPE)
